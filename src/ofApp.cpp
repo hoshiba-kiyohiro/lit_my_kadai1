@@ -49,9 +49,8 @@ void ofApp::draw(){
     float angle = 180 * (triTheta / PI);
     
     if(angle<0) angle = angle + 360;
-    cout << angle << endl;
     
-    ofSetColor(ofColor::fromHsb(ofMap(angle,0,360,0,255), 255, 255));
+    ofSetColor(ofColor::fromHsb(angle, 255, 255));
     
     
     ofNoFill();
